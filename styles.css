@@ -1,0 +1,528 @@
+a, abbr, address, article, aside, audio, blockquote, body, canvas, caption, cite, code, dd, del, details, dfn, div, dl, dt, em, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, iframe, img, ins, label, legend, li, main, mark, nav, ol, p, pre, q, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, ul, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+
+  * {
+    font-size: inherit;
+    font-family: inherit;
+    line-height: inherit;
+  }
+
+  *, ::after, ::before {
+    box-sizing: inherit;
+  }
+
+:root {
+    --font-size:20;
+    --font-scaling-factor:var(--font-size)/16;
+    --font-size-in-percent:calc(var(--font-scaling-factor)*100%);
+    --c-black:#000;
+    --c-black-rgb:0,0,0;
+    --c-white:#fff;
+    --c-white-rgb:255,255,255;
+    --c-dark-gray:#1d1d1b;
+    --c-dark-gray-rgb:29,29,27;
+    --c-light-gray:#a8a8a8;
+    --c-light-gray-rgb:168,168,168;
+    --c-orange:#ffb600;
+    --c-orange-rgb:255,182,0;
+    --c-green:#158802;
+    --c-green-rgb:21,136,2;
+    --c-red:#ed0311;
+    --c-red-rgb:237,3,17;
+    --ci-color:var(--c-orange);
+    --ci-color-rgb:var(--c-orange-rgb);
+    --plyr-color-main:var(--ci-color)
+   }
+   @media screen and (max-width:74.9375em) {
+    :root {
+     --font-size:18
+    }
+   }
+   @media screen and (max-width:37.5em) {
+    :root {
+     --font-size:16
+    }
+   }
+   @media (-ms-high-contrast:active),(forced-colors:active) {
+    :root {
+     --plyr-color-main:canvastext
+    }
+   }
+   html {
+    height:100%;
+    font-weight:500;
+    font-size:125%;
+    font-size:var(--font-size-in-percent);
+    font-family:Messina Sans,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,serif;
+    line-height:1.5;
+    background:linear-gradient(#ffab0e,#ffca11) fixed;
+    background-color:#ffb600;
+    background-color:var(--ci-color);
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+   }
+   body {
+    min-height:100%;
+    color:currentColor;
+    background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 595.3 491.9'%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='411.103' y1='493.854' x2='411.103' y2='57.054' gradientTransform='matrix(1 0 0 -1 0 491.89)'%3E%3Cstop offset='0' stop-color='%23f6c13e'/%3E%3Cstop offset='.136' stop-color='%23f9ca40' stop-opacity='.932'/%3E%3Cstop offset='.412' stop-color='%23fed842' stop-opacity='.794'/%3E%3Cstop offset='.697' stop-color='%23ffe043' stop-opacity='.652'/%3E%3Cstop offset='1' stop-color='%23ffe243' stop-opacity='.5'/%3E%3C/linearGradient%3E%3Cpath opacity='.7' fill='url(%23a)' d='M379.4-.6L226.3 434.8l369-255.1.6-181.7z'/%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='-.421' y1='384.69' x2='593.879' y2='384.69' gradientTransform='matrix(1 0 0 -1 0 491.89)'%3E%3Cstop offset='0' stop-color='%23f6c13e'/%3E%3Cstop offset='.136' stop-color='%23f9ca40' stop-opacity='.932'/%3E%3Cstop offset='.412' stop-color='%23fed842' stop-opacity='.794'/%3E%3Cstop offset='.697' stop-color='%23ffe043' stop-opacity='.652'/%3E%3Cstop offset='1' stop-color='%23ffe243' stop-opacity='.5'/%3E%3C/linearGradient%3E%3Cpath d='M-.4 73.2l594.3 141.1V.1H.4s.9 74.8-.8 73.1z' opacity='.7' fill='url(%23b)'/%3E%3C/svg%3E");
+    background-repeat:no-repeat;
+    background-size:100% auto;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+   }
+   body.prevent-scroll {
+    overflow:hidden
+   }
+   @media (-ms-high-contrast:active),(forced-colors:active) {
+    body {
+     background-image:none
+    }
+   }
+
+   main:first-child {
+    padding-top: 2rem;
+    padding-top: calc(40/var(--font-size)*1rem);
+  }
+
+  main {
+    margin-bottom: 2.5rem;
+    margin-bottom: calc(50/var(--font-size)*1rem);
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Style for start Button */
+#main .startButton {
+    background: none;
+    border: none;
+    border-radius: 0;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    min-width: 13.5rem;
+    min-width: calc(270/var(--font-size)*1rem);
+    padding: .55rem 1rem .7rem;
+    padding: calc(11/var(--font-size)*1rem) calc(20/var(--font-size)*1rem) calc(14/var(--font-size)*1rem) calc(20/var(--font-size)*1rem);
+    overflow: hidden;
+    color: canvastext;
+    font-weight: 700;
+    font-size: 2rem;
+    font-size: calc(40/var(--font-size)*1rem);
+    text-align: center;
+    background-color: #fff;
+    background-color: var(--c-white);
+    transition: all .5s ease-in-out
+}
+
+@media screen and (max-width:74.9375em) {
+    #main .startButton {
+        min-width: 9.5rem;
+        min-width: calc(190/var(--font-size)*1rem);
+        font-size: 1.25rem;
+        font-size: calc(25/var(--font-size)*1rem);
+        line-height: 1.75rem;
+        line-height: calc(35/var(--font-size)*1rem)
+    }
+}
+
+@media screen and (max-width:37.5em) {
+    #main .startButton {
+        min-width: 8rem;
+        min-width: calc(160/var(--font-size)*1rem);
+        font-size: 1.2rem;
+        font-size: calc(24/var(--font-size)*1rem);
+        line-height: 1.2rem;
+        line-height: calc(24/var(--font-size)*1rem)
+    }
+}
+
+#main .startButton.focus-visible,
+#main .startButton:hover {
+    color: #fff;
+    color: var(--c-white)
+}
+
+#main .startButton.focus-visible:before,
+#main .startButton:hover:before {
+    transform: translateX(15%) translateY(-35%) rotate(45deg)
+}
+
+#main .startButton:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 500%;
+    height: 1000%;
+    background-color: #000;
+    background-color: var(--c-black);
+    transform: translateX(-20%) translateY(10%) rotate(45deg);
+    transform-origin: 0 0;
+    transition: transform .5s ease-in-out
+}
+
+@media (-ms-high-contrast:active),
+(forced-colors:active) {
+    #main .startButton:before {
+        content: none
+    }
+}
+
+#main .startButton{
+   line-height: 1.50;
+}
+
+@media screen and (max-width:1199px) {
+  #main .startButton {
+    line-height: 1.75rem;
+    line-height: calc(35/var(--font-size)*1rem);    
+  }
+}
+
+
+
+
+
+
+
+
+
+/* Style for h1 */
+#main h1 {
+    font-weight: 700;
+    font-size: 3rem;
+    font-size: calc(60/var(--font-size)*2rem);
+    font-family: Messina Sans, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, serif;
+    line-height: 3.1rem;
+    line-height: calc(62/var(--font-size)*2rem)
+}
+
+@media screen and (max-width:79.9375em) {
+    #main h1 {
+        word-wrap: break-word;
+        -webkit-hyphens: auto;
+        -ms-hyphens: auto;
+        hyphens: auto
+    }
+}
+
+@media screen and (max-width:37.5em) {
+    #main h1 {
+        font-size: 1.5rem;
+        font-size: calc(30/var(--font-size)*2rem);
+        line-height: 1.6rem;
+        line-height: calc(32/var(--font-size)*2rem)
+    }
+}
+
+
+
+
+
+
+
+/* Style for h2 */
+#main h2 {
+    font-weight: 700;
+    font-size: 2rem;
+    font-size: calc(40/var(--font-size)*1rem);
+    font-family: Messina Sans, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, serif;
+    line-height: 2.4rem;
+    line-height: calc(48/var(--font-size)*1rem);
+    word-wrap: break-word;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto
+}
+
+@media screen and (max-width:74.9375em) {
+    #main h2 {
+        font-size: 1.35rem;
+        font-size: calc(27/var(--font-size)*1rem);
+        line-height: 1.6rem;
+        line-height: calc(32/var(--font-size)*1rem)
+    }
+}
+
+@media screen and (max-width:37.5em) {
+    #main h2 {
+        font-size: 1.1rem;
+        font-size: calc(22/var(--font-size)*1rem);
+        line-height: 1.35rem;
+        line-height: calc(27/var(--font-size)*1rem)
+    }
+}
+
+
+
+
+
+
+
+/* Style for h3 */
+#main h3 {
+    font-weight: 500;
+    font-size: 2rem;
+    font-size: calc(40/var(--font-size)*1rem);
+    font-family: Messina Sans, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, serif;
+    line-height: 2.4rem;
+    line-height: calc(48/var(--font-size)*1rem);
+    word-wrap: break-word;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto
+}
+
+@media screen and (max-width:74.9375em) {
+    #main h3 {
+        font-size: 1.5rem;
+        font-size: calc(30/var(--font-size)*1rem);
+        line-height: 1.9rem;
+        line-height: calc(38/var(--font-size)*1rem)
+    }
+}
+
+@media screen and (max-width:37.5em) {
+    #main h3 {
+        font-size: .9rem;
+        font-size: calc(18/var(--font-size)*1rem);
+        line-height: 1.1rem;
+        line-height: calc(22/var(--font-size)*1rem)
+    }
+}
+
+
+
+
+
+
+
+/* Style for h4 */
+#main h4 {
+    font-weight: 700;
+    font-size: 1.25rem;
+    font-size: calc(25/var(--font-size)*1rem);
+    font-family: Messina Sans, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, serif;
+    line-height: 1.5rem;
+    line-height: calc(30/var(--font-size)*1rem)
+}
+
+@media screen and (max-width:74.9375em) {
+    #main h4 {
+        font-size: 1.1rem;
+        font-size: calc(22/var(--font-size)*1rem);
+        line-height: 1.35rem;
+        line-height: calc(27/var(--font-size)*1rem)
+    }
+}
+
+@media screen and (max-width:37.5em) {
+    #main h4 {
+        font-size: .9rem;
+        font-size: calc(18/var(--font-size)*1rem);
+        line-height: 1.1rem;
+        line-height: calc(22/var(--font-size)*1rem)
+    }
+}
+
+
+
+
+
+
+
+
+
+#main .bigText {
+    font-weight: 500;
+    font-size: 1.25rem;
+    font-size: calc(25/var(--font-size)*1rem);
+    font-family: Messina Sans, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, serif;
+    line-height: 1.5rem;
+    line-height: calc(30/var(--font-size)*1rem)
+}
+
+@media screen and (max-width:74.9375em) {
+    #main .bigText {
+        font-size: 1.1rem;
+        font-size: calc(22/var(--font-size)*1rem);
+        line-height: 1.35rem;
+        line-height: calc(27/var(--font-size)*1rem)
+    }
+}
+
+@media screen and (max-width:37.5em) {
+    #main .bigText {
+        font-size: .8rem;
+        font-size: calc(16/var(--font-size)*1rem);
+        line-height: 1rem;
+        line-height: calc(20/var(--font-size)*1rem)
+    }
+}
+
+#main .intro {
+    width:100%;
+    max-width:1108px;
+    margin-right:auto;
+    margin-left:auto;
+    padding-right:3.7rem;
+    padding-right:calc(74/var(--font-size)*1rem);
+    padding-left:3.7rem;
+    padding-left:calc(74/var(--font-size)*1rem);
+    display: block;
+   }
+   @media screen and (max-width:74.9375em) {
+    #main .intro {
+     padding-right:2rem;
+     padding-right:calc(40/var(--font-size)*1rem);
+     padding-left:2rem;
+     padding-left:calc(40/var(--font-size)*1rem)
+    }
+   }
+   @media screen and (max-width:47.9375em) {
+    #main .intro {
+     padding-right:1rem;
+     padding-right:calc(20/var(--font-size)*1rem);
+     padding-left:1rem;
+     padding-left:calc(20/var(--font-size)*1rem);
+    }
+   }
+   #main .intro__inner {
+    display:flex;
+    flex-direction:column-reverse
+   }
+   @media screen and (max-width:47.9375em) {
+    #main .intro__inner {
+     display:block
+    }
+   }
+   #main .intro__action {
+    display:flex;
+    justify-content:flex-end;
+    margin-top:4rem;
+    margin-top:calc(80/var(--font-size)*1rem)
+   }
+   @media screen and (max-width:74.9375em) {
+    #main .intro__action {
+     margin-top:3.25rem;
+     margin-top:calc(65/var(--font-size)*1rem)
+    }
+   }
+   @media screen and (max-width:47.9375em) {
+    #main .intro__action {
+     justify-content:center;
+     margin-top:2.25rem;
+     margin-top:calc(45/var(--font-size)*1rem)
+    }
+   }
+   @media (-ms-high-contrast:active),(forced-colors:active) {
+    #main .intro__action a {
+     color:linktext;
+     border:.05rem solid linktext;
+     border:calc(1/var(--font-size)*1rem) solid linktext
+    }
+    #main .intro__action a:hover {
+     border:.15rem solid linktext;
+     border:calc(3/var(--font-size)*1rem) solid linktext
+    }
+   }
+   #main .intro__text {
+    font-weight:500;
+    font-size:1.25rem;
+    font-size:calc(25/var(--font-size)*1rem);
+    font-family:Messina Sans,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,serif;
+    line-height:1.5rem;
+    line-height:calc(30/var(--font-size)*1rem);
+    margin-top:4rem;
+    margin-top:calc(80/var(--font-size)*1rem);
+    padding-right:2.5rem;
+    padding-right:calc(50/var(--font-size)*1rem)
+   }
+   @media screen and (max-width:74.9375em) {
+    #main .intro__text {
+     font-size:1.1rem;
+     font-size:calc(22/var(--font-size)*1rem);
+     line-height:1.35rem;
+     line-height:calc(27/var(--font-size)*1rem)
+    }
+   }
+   @media screen and (max-width:37.5em) {
+    #main .intro__text {
+     font-size:.8rem;
+     font-size:calc(16/var(--font-size)*1rem);
+     line-height:1rem;
+     line-height:calc(20/var(--font-size)*1rem)
+    }
+   }
+   @media screen and (max-width:74.9375em) {
+    #main .intro__text {
+     margin-top:4.5rem;
+     margin-top:calc(90/var(--font-size)*1rem);
+     padding-right:0
+    }
+   }
+   @media screen and (max-width:47.9375em) {
+    #main .intro__text {
+     margin-top:2rem;
+     margin-top:calc(40/var(--font-size)*1rem)
+    }
+   }
+   #main .intro__text p {
+    color:#1d1d1b;
+    color:var(--c-dark-gray)
+   }
+   #main .intro__text p+p {
+    margin-top:1.25rem;
+    margin-top:calc(25/var(--font-size)*1rem)
+   }
