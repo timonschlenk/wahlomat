@@ -1,4 +1,4 @@
-#Freiheit, Gleichheit, Brüderlichkeit
+# Freiheit, Gleichheit, Brüderlichkeit
 
 Großprojekt des AK Fortschritts - Wir kümmern uns um die kleinen Dinge im Leben
 
